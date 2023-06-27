@@ -4,6 +4,7 @@ import { BiDownload } from 'react-icons/bi';
 
 import HeroImg from '../../assets/img4.png'
 import { Typewriter } from 'react-simple-typewriter'
+import { Link } from 'react-scroll'
 
 const Home = () => {
 
@@ -61,7 +62,8 @@ const handleDownload = () => {
 
                     <div className='flex gap-4'>
                         <button className='group text-white w-fit flex items-center rounded-md px-6 py-3 my-2 bg-sky-600 cursor-pointer hover:scale-105 duration-200'> 
-                            Projects <span className='ml-2 group-hover:rotate-90 duration-200'><FaArrowRight></FaArrowRight></span>
+                        <Link to='Portfolio' className='flex justify-center items-center' smooth duration={500} > Projects <span className='ml-2 group-hover:rotate-90 duration-200'><FaArrowRight></FaArrowRight> </span></Link>
+                           
                         </button>
 
                         <button onClick={handleDownload} className='group text-white w-fit flex items-center rounded-md px-6 py-3 my-2 bg-sky-600 cursor-pointer hover:scale-105 duration-200'> 
